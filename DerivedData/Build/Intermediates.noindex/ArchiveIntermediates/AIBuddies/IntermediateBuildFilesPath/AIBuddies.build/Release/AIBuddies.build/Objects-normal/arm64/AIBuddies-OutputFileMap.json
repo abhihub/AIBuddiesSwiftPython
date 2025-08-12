@@ -1,0 +1,35 @@
+{
+  "" : {
+    "const-values" : "/Users/abhishekarora/Desktop/Code/AIBuddiesAbhi/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/AIBuddies/IntermediateBuildFilesPath/AIBuddies.build/Release/AIBuddies.build/Objects-normal/arm64/AIBuddies-master.swiftconstvalues",
+    "dependencies" : "/Users/abhishekarora/Desktop/Code/AIBuddiesAbhi/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/AIBuddies/IntermediateBuildFilesPath/AIBuddies.build/Release/AIBuddies.build/Objects-normal/arm64/AIBuddies-master.d",
+    "diagnostics" : "/Users/abhishekarora/Desktop/Code/AIBuddiesAbhi/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/AIBuddies/IntermediateBuildFilesPath/AIBuddies.build/Release/AIBuddies.build/Objects-normal/arm64/AIBuddies-master.dia",
+    "emit-module-dependencies" : "/Users/abhishekarora/Desktop/Code/AIBuddiesAbhi/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/AIBuddies/IntermediateBuildFilesPath/AIBuddies.build/Release/AIBuddies.build/Objects-normal/arm64/AIBuddies-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/abhishekarora/Desktop/Code/AIBuddiesAbhi/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/AIBuddies/IntermediateBuildFilesPath/AIBuddies.build/Release/AIBuddies.build/Objects-normal/arm64/AIBuddies-master-emit-module.dia",
+    "swift-dependencies" : "/Users/abhishekarora/Desktop/Code/AIBuddiesAbhi/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/AIBuddies/IntermediateBuildFilesPath/AIBuddies.build/Release/AIBuddies.build/Objects-normal/arm64/AIBuddies-master.swiftdeps"
+  },
+  "/Users/abhishekarora/Desktop/Code/AIBuddiesAbhi/AIBuddies/AIBuddiesApp.swift" : {
+    "index-unit-output-path" : "/AIBuddies.build/Release/AIBuddies.build/Objects-normal/arm64/AIBuddiesApp.o",
+    "llvm-bc" : "/Users/abhishekarora/Desktop/Code/AIBuddiesAbhi/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/AIBuddies/IntermediateBuildFilesPath/AIBuddies.build/Release/AIBuddies.build/Objects-normal/arm64/AIBuddiesApp.bc",
+    "object" : "/Users/abhishekarora/Desktop/Code/AIBuddiesAbhi/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/AIBuddies/IntermediateBuildFilesPath/AIBuddies.build/Release/AIBuddies.build/Objects-normal/arm64/AIBuddiesApp.o"
+  },
+  "/Users/abhishekarora/Desktop/Code/AIBuddiesAbhi/AIBuddies/ChatManager.swift" : {
+    "index-unit-output-path" : "/AIBuddies.build/Release/AIBuddies.build/Objects-normal/arm64/ChatManager.o",
+    "llvm-bc" : "/Users/abhishekarora/Desktop/Code/AIBuddiesAbhi/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/AIBuddies/IntermediateBuildFilesPath/AIBuddies.build/Release/AIBuddies.build/Objects-normal/arm64/ChatManager.bc",
+    "object" : "/Users/abhishekarora/Desktop/Code/AIBuddiesAbhi/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/AIBuddies/IntermediateBuildFilesPath/AIBuddies.build/Release/AIBuddies.build/Objects-normal/arm64/ChatManager.o"
+  },
+  "/Users/abhishekarora/Desktop/Code/AIBuddiesAbhi/AIBuddies/ChatWindowView.swift" : {
+    "index-unit-output-path" : "/AIBuddies.build/Release/AIBuddies.build/Objects-normal/arm64/ChatWindowView.o",
+    "llvm-bc" : "/Users/abhishekarora/Desktop/Code/AIBuddiesAbhi/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/AIBuddies/IntermediateBuildFilesPath/AIBuddies.build/Release/AIBuddies.build/Objects-normal/arm64/ChatWindowView.bc",
+    "object" : "/Users/abhishekarora/Desktop/Code/AIBuddiesAbhi/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/AIBuddies/IntermediateBuildFilesPath/AIBuddies.build/Release/AIBuddies.build/Objects-normal/arm64/ChatWindowView.o"
+  },
+  "/Users/abhishekarora/Desktop/Code/AIBuddiesAbhi/AIBuddies/ContentView.swift" : {
+    "index-unit-output-path" : "/AIBuddies.build/Release/AIBuddies.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/abhishekarora/Desktop/Code/AIBuddiesAbhi/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/AIBuddies/IntermediateBuildFilesPath/AIBuddies.build/Release/AIBuddies.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/abhishekarora/Desktop/Code/AIBuddiesAbhi/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/AIBuddies/IntermediateBuildFilesPath/AIBuddies.build/Release/AIBuddies.build/Objects-normal/arm64/ContentView.o"
+  },
+  "/Users/abhishekarora/Desktop/Code/AIBuddiesAbhi/AIBuddies/FloatingIconView.swift" : {
+    "index-unit-output-path" : "/AIBuddies.build/Release/AIBuddies.build/Objects-normal/arm64/FloatingIconView.o",
+    "llvm-bc" : "/Users/abhishekarora/Desktop/Code/AIBuddiesAbhi/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/AIBuddies/IntermediateBuildFilesPath/AIBuddies.build/Release/AIBuddies.build/Objects-normal/arm64/FloatingIconView.bc",
+    "object" : "/Users/abhishekarora/Desktop/Code/AIBuddiesAbhi/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/AIBuddies/IntermediateBuildFilesPath/AIBuddies.build/Release/AIBuddies.build/Objects-normal/arm64/FloatingIconView.o"
+  }
+}

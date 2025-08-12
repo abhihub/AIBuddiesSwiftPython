@@ -1,0 +1,10 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "969976ecaffa9126c48ae7ad821dca9214a37e1c1f5ccc2dfb4724c865ad2ead"
+build_start_time: [1754956525, 580509000]
+build_end_time: [1754956530, 190285000]
+inputs:
+  "/Users/abhishekarora/Desktop/Code/AIBuddiesAbhi/AIBuddies/AIBuddiesApp.swift": !dirty [1754956045, 721849356]
+  "/Users/abhishekarora/Desktop/Code/AIBuddiesAbhi/AIBuddies/ChatManager.swift": !dirty [1754956199, 255737637]
+  "/Users/abhishekarora/Desktop/Code/AIBuddiesAbhi/AIBuddies/ChatWindowView.swift": !dirty [1754956162, 750899363]
+  "/Users/abhishekarora/Desktop/Code/AIBuddiesAbhi/AIBuddies/ContentView.swift": !dirty [1754956056, 673984756]
+  "/Users/abhishekarora/Desktop/Code/AIBuddiesAbhi/AIBuddies/FloatingIconView.swift": !dirty [1754956096, 417773320]
