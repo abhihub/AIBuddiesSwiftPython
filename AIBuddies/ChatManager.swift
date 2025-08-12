@@ -46,6 +46,7 @@ class ChatManager: ObservableObject {
     @Published var apiKey: String = ""
     
     private var chatWindowController: NSWindowController?
+    private var settingsWindowController: NSWindowController?
     
     init() {
         loadAPIKey()
@@ -199,10 +200,152 @@ class ChatManager: ObservableObject {
         
         self.chatWindowController = NSWindowController(window: chatWindow)
     }
+    
+    func showSettingsWindow() {
+        print("🔧 Opening settings window...")
+        DispatchQueue.main.async {
+            self.createSettingsWindow()
+        }
+    }
+    
+    private func createSettingsWindow() {
+        let settingsWindow = NSWindow(
+            contentRect: NSRect(x: 0, y: 0, width: 400, height: 300),
+            styleMask: [.titled, .closable],
+            backing: .buffered,
+            defer: false
+        )
+        
+        settingsWindow.title = "AIBuddies Settings"
+        settingsWindow.center()
+        
+        let settingsView = SettingsView().environmentObject(self)
+        settingsWindow.contentView = NSHostingView(rootView: settingsView)
+        
+        settingsWindow.makeKeyAndOrderFront(nil)
+        
+        self.settingsWindowController = NSWindowController(window: settingsWindow)
+    }
 }
 
 struct AIResponse: Codable {
     let success: Bool
     let response: String?
     let error: String?
+}
+
+struct SettingsView: View {
+    @EnvironmentObject var chatManager: ChatManager
+    @State private var apiKeyInput: String = ""
+    @State private var showingSaved: Bool = false
+    
+    var body: some View {
+        VStack(spacing: 20) {
+            VStack(spacing: 8) {
+                Image(systemName: "gear")
+                    .font(.system(size: 40))
+                    .foregroundColor(.blue)
+                
+                Text("AIBuddies Settings")
+                    .font(.title2)
+                    .fontWeight(.semibold)
+            }
+            .padding(.top, 20)
+            
+            Divider()
+            
+            VStack(alignment: .leading, spacing: 12) {
+                HStack {
+                    Image(systemName: "key.fill")
+                        .foregroundColor(.orange)
+                    Text("OpenAI API Key")
+                        .font(.headline)
+                }
+                
+                Text("Enter your OpenAI API key to enable chat with Leo Pet")
+                    .font(.caption)
+                    .foregroundColor(.secondary)
+                
+                VStack(spacing: 8) {
+                    SecureField("sk-...", text: $apiKeyInput)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .onAppear {
+                            apiKeyInput = chatManager.apiKey
+                        }
+                    
+                    HStack {
+                        Text("Current status:")
+                            .font(.caption)
+                            .foregroundColor(.secondary)
+                        
+                        if chatManager.apiKey.isEmpty {
+                            Label("Not configured", systemImage: "exclamationmark.triangle.fill")
+                                .font(.caption)
+                                .foregroundColor(.red)
+                        } else {
+                            Label("Configured", systemImage: "checkmark.circle.fill")
+                                .font(.caption)
+                                .foregroundColor(.green)
+                        }
+                        
+                        Spacer()
+                    }
+                }
+            }
+            .padding(.horizontal, 20)
+            
+            Spacer()
+            
+            VStack(spacing: 12) {
+                if showingSaved {
+                    HStack {
+                        Image(systemName: "checkmark.circle.fill")
+                            .foregroundColor(.green)
+                        Text("API Key Saved!")
+                            .foregroundColor(.green)
+                            .fontWeight(.medium)
+                    }
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 8)
+                    .background(Color.green.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                
+                HStack(spacing: 12) {
+                    Button("Cancel") {
+                        closeWindow()
+                    }
+                    .keyboardShortcut(.cancelAction)
+                    
+                    Button("Save") {
+                        saveAPIKey()
+                    }
+                    .keyboardShortcut(.defaultAction)
+                    .buttonStyle(.borderedProminent)
+                    .disabled(apiKeyInput.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
+                }
+            }
+            .padding(.bottom, 20)
+        }
+        .frame(width: 400, height: 300)
+    }
+    
+    private func saveAPIKey() {
+        let trimmedKey = apiKeyInput.trimmingCharacters(in: .whitespacesAndNewlines)
+        chatManager.saveAPIKey(trimmedKey)
+        
+        withAnimation {
+            showingSaved = true
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+            closeWindow()
+        }
+    }
+    
+    private func closeWindow() {
+        if let window = NSApp.keyWindow {
+            window.close()
+        }
+    }
 }

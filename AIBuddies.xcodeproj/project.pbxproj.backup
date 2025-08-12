@@ -1,0 +1,262 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		OBJ_10 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* ContentView.swift */; };
+		OBJ_11 /* FloatingIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* FloatingIconView.swift */; };
+		OBJ_12 /* ChatWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* ChatWindowView.swift */; };
+		OBJ_13 /* AIBuddiesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* AIBuddiesApp.swift */; };
+		OBJ_14 /* ChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* ChatManager.swift */; };
+		OBJ_15 /* ai_backend.py in Resources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* ai_backend.py */; };
+		OBJ_16 /* requirements.txt in Resources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* requirements.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		OBJ_6 /* AIBuddies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = AIBuddies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_8 /* AIBuddiesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIBuddiesApp.swift; sourceTree = "<group>"; };
+		OBJ_9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		OBJ_17 /* FloatingIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingIconView.swift; sourceTree = "<group>"; };
+		OBJ_18 /* ChatWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatWindowView.swift; sourceTree = "<group>"; };
+		OBJ_19 /* ChatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatManager.swift; sourceTree = "<group>"; };
+		OBJ_20 /* ai_backend.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = ai_backend.py; sourceTree = "<group>"; };
+		OBJ_21 /* requirements.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = requirements.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		OBJ_5 /* */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_7 /* AIBuddies */,
+				OBJ_23 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* AIBuddies */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* AIBuddiesApp.swift */,
+				OBJ_9 /* ContentView.swift */,
+				OBJ_17 /* FloatingIconView.swift */,
+				OBJ_18 /* ChatWindowView.swift */,
+				OBJ_19 /* ChatManager.swift */,
+				OBJ_20 /* ai_backend.py */,
+				OBJ_21 /* requirements.txt */,
+			);
+			path = AIBuddies;
+			sourceTree = "<group>";
+		};
+		OBJ_23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* AIBuddies.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		OBJ_24 /* AIBuddies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_25 /* Build configuration list for PBXNativeTarget "AIBuddies" */;
+			buildPhases = (
+				OBJ_28 /* Sources */,
+				OBJ_22 /* Frameworks */,
+				OBJ_30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AIBuddies;
+			productName = AIBuddies;
+			productReference = OBJ_6 /* AIBuddies.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "AIBuddies" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5 /* */;
+			productRefGroup = OBJ_23 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				OBJ_24 /* AIBuddies */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		OBJ_30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_15 /* ai_backend.py in Resources */,
+				OBJ_16 /* requirements.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_13 /* AIBuddiesApp.swift in Sources */,
+				OBJ_10 /* ContentView.swift in Sources */,
+				OBJ_11 /* FloatingIconView.swift in Sources */,
+				OBJ_12 /* ChatWindowView.swift in Sources */,
+				OBJ_14 /* ChatManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AIBuddies/AIBuddies.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = AIBuddies;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aibuddies.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AIBuddies/AIBuddies.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = AIBuddies;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aibuddies.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_2 /* Build configuration list for PBXProject "AIBuddies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_25 /* Build configuration list for PBXNativeTarget "AIBuddies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_26 /* Debug */,
+				OBJ_27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}

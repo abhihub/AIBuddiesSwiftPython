@@ -12,5 +12,13 @@ struct AIBuddiesApp: App {
         .windowStyle(.hiddenTitleBar)
         .windowResizability(.contentSize)
         .defaultSize(width: 100, height: 100)
+        .commands {
+            CommandGroup(replacing: .appSettings) {
+                Button("Settings...") {
+                    chatManager.showSettingsWindow()
+                }
+                .keyboardShortcut(",")
+            }
+        }
     }
 }
