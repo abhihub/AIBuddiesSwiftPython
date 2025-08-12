@@ -97,11 +97,20 @@ class ChatManager: ObservableObject {
             return
         }
         
-        let pythonScriptPath = "\(resourcePath)/ai_backend.py"
+        // Debug: Check if API key is set
+        if apiKey.isEmpty {
+            completion("Error: Please set your OpenAI API key in the settings")
+            return
+        }
+        
+        let pythonExecutablePath = "\(resourcePath)/ai_backend"
+        print("🐍 Python executable path: \(pythonExecutablePath)")
+        print("🔑 API key length: \(apiKey.count) characters")
+        print("💬 Message: \(message)")
         
         let task = Process()
-        task.launchPath = "/usr/bin/python3"
-        task.arguments = [pythonScriptPath, apiKey, message]
+        task.launchPath = pythonExecutablePath
+        task.arguments = [apiKey, message]
         
         let pipe = Pipe()
         task.standardOutput = pipe
@@ -110,7 +119,12 @@ class ChatManager: ObservableObject {
         task.terminationHandler = { _ in
             let data = pipe.fileHandleForReading.readDataToEndOfFile()
             if let output = String(data: data, encoding: .utf8) {
-                if let jsonData = output.data(using: .utf8),
+                print("🐍 Python output: \(output)")
+                
+                // Clean the output (remove any whitespace/newlines)
+                let cleanOutput = output.trimmingCharacters(in: .whitespacesAndNewlines)
+                
+                if let jsonData = cleanOutput.data(using: .utf8),
                    let result = try? JSONDecoder().decode(AIResponse.self, from: jsonData) {
                     if result.success {
                         completion(result.response ?? "No response")
@@ -118,7 +132,7 @@ class ChatManager: ObservableObject {
                         completion("Error: \(result.error ?? "Unknown error")")
                     }
                 } else {
-                    completion("Error: Could not parse response")
+                    completion("Error: Could not parse response. Raw output: \(cleanOutput)")
                 }
             } else {
                 completion("Error: No response from AI")

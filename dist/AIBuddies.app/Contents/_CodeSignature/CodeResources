@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Resources/ai_backend</key>
+		<data>
+		Wd+vNetGiOU9JUYzKF7Ce4hFEN8=
+		</data>
 		<key>Resources/ai_backend.py</key>
 		<data>
 		QYE4dHTDAB14mEWgYhYlp4rcwfs=
@@ -15,23 +19,12 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>MacOS/AIBuddies.debug.dylib</key>
+		<key>Resources/ai_backend</key>
 		<dict>
-			<key>cdhash</key>
+			<key>hash2</key>
 			<data>
-			2/+7HJN7J0/lGA2WFeTpkR1zGGI=
+			iEZHYzfCyPnyJOBc1SWC/HCiw6dQ2MXoJc3sY4MvdhY=
 			</data>
-			<key>requirement</key>
-			<string>cdhash H"dbffbb1c937b274fe5180d9615e4e9911d731862"</string>
-		</dict>
-		<key>MacOS/__preview.dylib</key>
-		<dict>
-			<key>cdhash</key>
-			<data>
-			LYGv11Av5NOHsMMdposBRhY6W3Q=
-			</data>
-			<key>requirement</key>
-			<string>cdhash H"2d81afd7502fe4d387b0c31da68b0146163a5b74"</string>
 		</dict>
 		<key>Resources/ai_backend.py</key>
 		<dict>
